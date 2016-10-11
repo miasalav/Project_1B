@@ -1,0 +1,640 @@
+@charset "utf-8";
+/* CSS Document */
+
+.hidden {
+    display: none;
+}
+
+hr
+{
+    color: #d7d7d7;     
+}
+
+.container{
+    width: 100%;
+    overflow: auto;
+}
+
+.flex 
+{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.flex-start
+{
+    align-self: flex-start;
+}
+
+.flex-end
+{
+    align-self: flex-end;
+}
+
+.center
+{
+    align-items: center;
+    justify-content: center;
+}
+
+.space-around
+{
+    justify-content: space-around;
+}
+/**HEADER**/
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    height: auto;
+    width: 100%;
+    background-color: white;
+    padding-bottom: 0.75em;
+    padding-top: 0.75em;
+}
+
+.bigNav
+{
+    justify-content: space-between;
+}
+.logo 
+{
+    padding-bottom: 8px;
+    width: 30%;
+    margin-left: 2%;
+    display: flex;
+    align-self: center;
+}
+
+.header-logo {
+	max-width: 100%;
+}
+
+nav{
+   
+   display: none;
+}
+nav ul
+{
+    text-decoration: none;
+    list-style-type: none;
+        
+}
+
+nav ul li
+{
+   display: inline;
+    margin-right: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 0.7em;
+    color: #e2574c;
+    
+}
+
+nav ul li a 
+{
+    text-decoration: none;
+    color: #e2574c;
+}
+
+nav ul li a:hover
+{
+    color: #b64030;
+}
+
+
+.shopping-cart
+{
+    display: flex;
+    width: 12.5%;
+    margin-right: 1em;
+    align-self: center;
+    
+}
+.shopping-cart img
+{
+    max-width: 100%;
+}
+
+#cart-items
+{
+    background-color: red;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 5px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 0.9em;
+    padding: 1px;
+}
+
+.mobile-nav ul
+{
+    text-decoration: none;
+    list-style-type: none;
+        
+}
+
+.mobile-nav ul li
+{
+   display: inline;
+    margin-right: 12px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 0.7em;
+    color: #e2574c;
+    
+}
+
+.mobile-nav ul li a
+{
+    text-decoration: none;
+    color: #e2574c;
+}
+
+.mobile-nav ul li a:hover
+{
+    color: #b64030;
+}
+
+
+/**INTRO**/
+
+.intro
+{	
+
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.247059) 0%,
+        rgba(0, 0, 0, 0.247059) 100%),
+        url(../images/banner-girl.png),
+        url(../images/flower-bkgd.jpg);
+    background-repeat: repeat-x, no-repeat;
+    background-size: cover, contain;
+    background-position: center top, 50% 100px;
+    top: 65px;
+    height: 600px;
+    width: 100%;
+    max-height: 600px;
+    overflow: hidden; 
+    justify-content: space-around;   
+}
+
+.intro-content
+    {
+        color: white;
+        text-shadow: 2px 2px 3px rgba(100, 100, 100, 1);
+    }
+
+.intro-content h1
+    {
+        font-family: 'Playfair Display', serif;
+        font-size: 2.5em;      
+        text-align: center;
+      
+    }
+
+.intro-content h3
+    {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1em;
+        text-align: center;
+    }
+
+.description-section
+{
+    height: 300px;
+    color: #2d2d2d;
+    text-align: center;
+    
+}
+.description-section p 
+{
+    font-family: 'Raleway', sans-serif;
+    padding-top: 2em;
+    font-size: 0.95em;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    line-height: 2em;
+    font-size: 0.8em;
+
+}
+.section-title
+{
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-style: italic;
+    display: block;
+    font-size: 1.5em;
+    color: #2d2d2d;
+}
+.section-title-bold
+{
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.category-menu
+{
+    flex-wrap: wrap; 
+    box-sizing: border-box;
+}
+
+.category-div
+{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+    height: 175px;
+    flex-basis: 50%;
+    border: solid;
+    border-width: 2px;
+    box-sizing: border-box;
+    
+}
+
+
+#men-div
+{
+   background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url("../images/mens-category.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+   flex-basis: 100%;
+  
+}
+
+#trend-div
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url("../images/trends-category.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#glasses-div
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url("../images/glasses-category.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#sale-div
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url("../images/sale-category.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bag-div
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url("../images/bags-category.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#women-div
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url("../images/womens-category.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-basis: 100%;
+}
+
+
+
+/* PRODUCTS */
+
+.product-container{
+    margin-bottom: 3em;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.products a
+{
+    text-decoration: none;
+    color: #969696;
+}
+
+.products h2
+{
+   text-align: center;
+    margin: 50px;
+}
+
+.product-div img{
+    display: block;
+    margin: 0 auto;
+}
+.product-div
+{
+    width: 100%;
+    line-height: 2.25em;
+    text-align: center;
+    display: flex;
+}
+
+.product-category
+{
+    color: #969696;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 500;
+    font-family: 'Raleway', sans-serif;
+      
+}
+
+.product-div h5
+{
+     font-family: 'Playfair Display', sans-serif;
+     font-size: 1.2em;
+     color: #e2574c;
+}
+
+.product-div p
+{
+    color: #969696;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 500;
+    font-family: 'Raleway';     
+}
+
+.product-div h5:hover
+{
+    color: #b64030;
+}
+
+/*UPDATES*/
+
+.updates-section
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url("../images/wave-bkgd.jpg");
+    background-repeat: no-repeat;
+    background-size: contain 120% 250%;
+    background-position: center bottom;
+    height: 350px; 
+    
+}
+
+.updates-section h2 
+{
+    color: white;
+}
+
+.update-content
+{
+    padding-top: 7%;
+    width: 80%;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+ 
+}
+
+.update-content p
+{
+    font-family: 'Raleway';
+    font-size: 0.9em;
+    line-height: 2em;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding-top:  1.5em;
+}
+
+.update-textbox
+{
+    background-color: white;
+    width: 415px;
+    margin-top: 1em;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 40px;
+    justify-content: space-between;
+}
+
+input[type=text] {
+    border: none;
+    margin-left: 12px;
+    align-self: center; 
+}
+
+input[type=submit]
+{
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    box-sizing: border-box;
+    width: 125px;
+    height: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-family: 'Raleway';
+    background-color: #e2574c;
+    color: white;
+    border: none;
+    margin-right: 5px;
+    align-self: center;
+    
+    
+}
+
+/*FOOTER*/ 
+
+footer
+{
+    height: 200px;
+    background-color: #242424;
+    padding: 3% 3% 0 3%; 
+    color: white;
+    border-top-style: solid;
+    border-top-width: 10px;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+ 
+}
+
+footer a
+{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.footer-info
+{
+    line-height: 1.5em;
+    font-family: 'Playfair Display';
+    font-size: 0.8em;
+}
+
+.footer-address
+{
+    margin-top: 1em;
+    color: #999;
+}
+
+.footer-nav ul
+{
+    list-style-type: none;
+    margin-bottom: 4em;
+    margin-top: 1em;
+    
+}
+
+.footer-nav ul li{
+    font-family: 'Raleway', sans-serif; 
+    line-height: 1.75em;
+    font-size: 0.85em;
+    font-weight: 200;
+    display: inline;
+}
+
+.footer-nav ul li i
+{
+    margin-right: 10px;
+}
+
+.footer-nav span
+{
+    display: none;
+}
+
+@media(min-width: 600px) {
+    
+   /*HEADER*/
+    
+    .mobile-nav{
+        display: none;
+    }
+    
+    header hr
+    {
+        display: none;
+    }
+    
+    .bigNav
+    {
+        justify-content: space-between;
+    }
+    nav
+    {
+        display: block;
+        font-size: 1.25em;
+    }
+    
+    .logo
+    {
+        width: 15%;
+    }
+    
+    .shopping-cart
+    {
+        width: 6%;
+    }
+    
+    /*INTRO*/
+    
+    .intro h3
+    {
+        font-size: 1.5em;
+    }
+    .intro h1
+    {
+        font-size: 3.5em;
+    }
+    /*DESCRIPTION */
+    
+    .section-title
+    {
+        font-size: 2em;
+    }
+    
+    .description-section p
+    {
+        font-size: 0.95em;
+    }
+    
+    /*CATEGORY*/
+    
+        
+    /*PRODUCT DIV*/
+    
+    .product-div
+    {
+        width: 50%;
+    }
+    
+    footer
+    {
+        justify-content: space-between;
+        flex-direction: row;
+        padding-right: 2em;
+    }
+    
+    .footer-info
+    {
+        align-self: flex-start;
+        font-size: 0.9em;
+        text-align: left;
+    }
+    
+    .footer-nav
+    {
+        align-self: flex-end;
+    }
+    
+    .footer-nav ul li
+    {
+        display: block;
+        text-align: left;
+        font-size: 0.9em;
+    }
+    
+    .footer-nav span
+    {
+        display: inline;
+    }
+    
+}
+
+@media (min-width: 900px) {
+    /* CATERGORY */
+    
+    .category-div
+    {
+        flex-basis: 25%;
+    }
+    #men-div
+    {
+        flex-basis: 50%;   
+    }
+    
+    #women-div{
+        flex-basis: 50%;
+    }
+    
+    .product-div{
+        flex-basis: 25%:
+    }
+    
+    nav
+    {
+        font-size: 1.5em;
+    }
+}

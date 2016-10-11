@@ -1,0 +1,227 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aloha Apparel Co.</title>
+<link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway:300,400,500" rel="stylesheet"> 
+<link href="css/reset.css" rel="stylesheet" type="text/css" /> 
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+</head>
+
+<body>
+	<header>
+	   <div class="bigNav flex">    
+    	<div class="logo flex-start">
+			<img class="header-logo" src="images/aloha-logo.svg">
+        </div>
+
+		<nav>
+			<ul class="flex">
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#shop">SHOP</a></li>
+				<li><a href="#featured">FEATURED</a></li>
+				<li><a href="#updates">UPDATES</a></li>
+			</ul>
+		</nav>
+        
+    	<div class="shopping-cart flex-end">
+			<div id="cart-items">0</div>
+        	<img src="images/cart-icon.svg" class="menu-img">  
+    	</div>
+
+	   </div>
+
+		<hr>
+		<div class="mobile-nav flex center">
+			<ul>
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#shop">SHOP</a></li>
+				<li><a href="featured">FEATURED</a></li>
+				<li><a href="updates">UPDATES</a></li>
+			</ul>
+		</div>
+        
+	</header>
+    
+    <section class="intro flex">
+    		
+    	<div class="intro-content center">
+			<h3>NEW COLLECTION</h3>
+            <h1>Spring/Summer 2016</h1>
+        </div>
+        
+    </section>
+    
+	<a id="about"></a>
+    <section class="description-section flex center">
+		<div class="center">
+			<h2 class="section-title">Hand-crafted<span class="section-title-bold"> Styles</span></h2>
+        	<p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
+		</div>
+  </section>
+  	<a id="shop"></a>
+	<section class="category-menu flex">
+		<div class="category-div flex center" id="men-div">MEN'S</div>
+		<div class="category-div flex center" id="trend-div">TRENDS</div>
+		<div class="category-div flex center" id="glasses-div">GLASSES</div>
+		<div class="category-div flex center" id="sale-div">SALE</div>
+		<div class="category-div flex center" id="bag-div">BAGS</div>
+		<div class="category-div flex center" id="women-div">WOMEN'S</div>		
+	</section>
+    
+	  <a id="featured"></a>
+      <section class="products">
+    	<h2 class="section-title center">Most-Loved<span class="section-title-bold"> Products</span></h2>
+           <div class="product-container flex">
+			<div data-sale="true" data-price="30" data-discount="10" class="product-div">
+            	<a href="#">
+                	<img src="images/stretch-knit-dress.jpg" alt="Stretch Knit Dress">
+                	<h4 class="product-category">DRESSES</h4>
+                	<h5>Stretch Knit Dress</h5>
+                	<p class="price">$169.00</p>
+                </a>
+            </div>
+      
+            <div data-sale="true" data-price="30" data-discount="10" class="product-div">
+            	<a href="#">
+                	<img src="images/cotton-blue-shirt.jpg" alt="Cotton Blue Shirt">
+                	<h4 class="product-category">SHIRTS</h4>
+                	<h5>Cotton Blue Shirt</h5>
+                	<p class="price">$89.00</p>
+                </a>
+            </div>
+            
+            <div data-sale="false" class="product-div">
+            	<a href="#">
+                	<img src="images/checked-stretch-dress.jpg" alt="Checked Stretch Dress">
+                	<h4 class="product-category">DRESSES</h4>
+                	<h5>Checked Stretch Dress</h5>
+                	<p class="price">$129.00</p>
+                </a>
+            </div>
+            
+            <div data-sale="false" class="product-div">
+            	<a href="#">
+                	<img src="images/blue-hipster-backpack.jpg" alt="Blue Hipster Backpack">
+                	<h4 class="product-category">BAGS</h4>
+                	<h5>Blue Hipster Backpack</h5>
+                	<p class="price">$69.00</p>
+                </a>
+            </div>
+           </div>
+            
+    </section>
+    
+	<a id="updates"></a>   
+    <section class="updates-section flex center">
+
+	   <div class="update-content">
+		<h2 class="section-title">Sign-up for<span class="section-title-bold"> Updates</span></h2>
+		<p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe anytime.</p>
+	   
+		<form class="flex center">
+        	<div class="update-textbox flex">
+        		<input class="flex-start" id="email" type="text" value="" placeholder="Your Email">
+           		<input class="flex-end" type="submit" value="Subscribe" onclick="validateForm()">
+            </div>
+        </form>
+	   </div>
+    </section>
+    
+    <footer class="flex">
+    	<div class="footer-info">
+    		<p>&copy; 2016 Aloha Apparel Co. <br>
+        	Powered by HTML and CSS.</p>
+        
+       	    <p>604-604-6040. <a href="mailto:info@alohaapparel.com" target="_top">info@alohaapparel.com</a></p>
+        
+       		<p class="footer-address">1490 W Broadway<br>
+        	Vancouver, BC, Canada</p>
+        </div>
+        
+        <div class="footer-nav">
+			<ul>
+            	<li><a href=""><i class="socicon-facebook"></i><span> Facebook</span></a></li>
+                <li><a href=""><i class="socicon-twitter"></i><span> Twitter</span></a></li>
+                <li><a href=""><i class="socicon-instagram"></i><span> Instagram</span></a></li>
+                <li><a href=""><i class="socicon-pinterest"></i><span> Pinterest</span></a></li>
+                <li><a href=""><i class="socicon-googleplus"></i><span> Google Plus</span></a></li>
+            </ul>        
+        
+        </div>
+        
+        
+    </footer>
+
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+	<script>
+		  function validateForm(){
+           // write the code that describes the steps to validate the form
+           // i need to validate the email address
+           // what is the criteria for valid email address
+           // blah followed by an @ followed by blah follorwed by a do followed by two-four characters(for now)
+           // todo: cosnider this dot that dot some extension
+
+           //research : substr(), substring(), indexOf(), charAt() methods of
+           //string object
+
+           console.log("validateForm(): ");
+           var emailFieldValue = document.getElementById("email").value;
+           console.log("substr(0,4) = " + emailFieldValue.substr(0,4));
+           console.log("substring(2,8) = " + emailFieldValue.substring(2,8));
+           console.log("does email have 'mia' ? " + emailFieldValue.indexOf ("mia"));
+           console.log("does email have 'sdfsd' ?" + emailFieldValue.indexOf ("sdfsd"));
+           console.log("what character is found at position 5?" + emailFieldValue.charAt(5));
+           
+           var score = 0;
+           if(emailFieldValue.indexOf("a")!=-1){
+               score = score + 1;
+               console.log("found an @!");
+           }else{
+               console.log('o dod not find an @ :(")');
+           }
+
+           console.log("the number of characters in my email field calue is");
+           console.log(emailFieldValue.length);
+           var lastCharPosition = emailFieldValue.length-1;
+           if (emailFieldValue.charAt(lastCharPosition-2)=="." || emailFieldValue.charAt(lastCharPosition-3)=="." || emailFieldValue.charAt(lastCharPosition-4)=="."){
+                console.log("you have a dot 2,3, or 4 chars from the end.");
+                score = score + 1;
+           }
+           var badChars = ["!", "#", "&", "*"];
+           
+           var bad=0;
+           for (var i=0; i<badChars.length; i++){
+               var currentBadChar = badChars[i];
+               for (var r=0; r<emailFieldValue.length; r++){
+                   var currentgoodChar= emailFieldValue.charAt(r);
+                   if(currentgoodChar == currentBadChar){
+                       alert("email is invalid, try again");
+                       bad = 1;
+                       break;
+                       
+                   }
+               }
+           }
+
+           if(bad == 0){
+               score=score+1;
+           }
+           if(score == 3){
+               alert('Thanks for subscribing!');
+           }
+
+       }
+	</script>
+
+
+</body>
+</html>

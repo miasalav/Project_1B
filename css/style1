@@ -1,0 +1,441 @@
+@charset "utf-8";
+/* CSS Document */
+
+.hidden {
+    display: none;
+}
+
+hr
+{
+    color: #d7d7d7; 
+    margin-bottom: 3em;
+    
+}
+
+.container{
+    width: 100%;
+    max-width: 1240px;
+    overflow: auto;
+    
+}
+
+/**HEADER**/
+header
+{
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+}
+.logo 
+{
+    float: left;
+    padding-bottom: 10px;
+    width: 15%;
+    margin-left: 2%;
+}
+.header-logo {
+	  padding-left: 15px;
+      max-width: 100%;
+	}
+	
+/*NAV*/
+
+ nav 
+{
+    float: right;
+    width: 6%;
+}
+
+nav img
+{
+    float: right;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+.intro
+{	
+
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.247059) 0%,
+        rgba(0, 0, 0, 0.247059) 100%),
+        url(../images/banner-girl.png),
+        url(../images/flower-bkgd.jpg);
+    background-repeat: repeat-x, no-repeat;
+    background-size: cover, contain;
+    background-position: center top, 50% 100px;
+    top: 65px;
+    height: 975px;
+    width: 100%;
+    max-height: 525px;
+    overflow: hidden;    
+}
+
+     
+.intro-content
+    {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: 60%;
+        text-shadow: 2px 2px 3px rgba(100, 100, 100, 1);
+    }
+
+.intro-content h1
+    {
+        font-family: 'PlayfairDisplay-Regular';
+        font-size: 5em;
+        
+        
+    }
+
+.intro-content h3
+    {
+        font-family: 'Raleway', sans-serif;
+        
+      
+    }
+
+/* DESCRIPTION*/
+
+.description-section
+{
+    padding-top: 50px;
+    height: 180px;
+    color: #2d2d2d;
+}
+.description-section p 
+{
+    text-align: center;
+    font-family: 'Raleway-Light';
+    padding-top: 2em;
+    font-size: 0.95em;
+    width: 45%;
+    display: block;
+    margin: 0 auto;
+    line-height: 2em;
+
+}
+.section-title
+{
+    font-family: 'PlayfairDisplay-Italic';  
+    text-align: center;
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    color: #2d2d2d;
+}
+.section-title-bold
+{
+    font-family: 'playfair_displaybold', sans-serif;
+}
+
+/*PRODUCTS*/
+
+.products
+{
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 3em;
+       
+}
+
+.product-container
+{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 3em;
+    
+ }
+
+
+.products a
+{
+    text-decoration: none;
+    color: #969696;
+}
+
+.product-div img{
+    width: 275px;
+    display: block;
+    margin: 0 auto;
+}
+.product-div
+{
+    float: left;
+    width: 22.5%;
+    margin-left: 1em;
+    line-height: 2.25em;
+}
+
+.product-category
+{
+    color: #969696;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-family: 'Raleway-Medium';
+      
+}
+
+.product-div h5
+{
+     font-family: 'PlayfairDisplay-Regular';
+     font-size: 1.2em;
+     color: #e2574c;
+}
+
+.product-div p
+{
+    color: #969696;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-family: 'Raleway-Medium';     
+}
+
+.product-div h5:hover
+{
+    color: #b6403;
+}
+
+
+/*UPDATES*/
+
+.updates-section
+{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url("../images/wave-bkgd.jpg");
+    background-repeat: no-repeat;
+    background-size: contain 120% 250%;
+    background-position: center bottom;
+    height: 350px; 
+    
+}
+
+.updates-section h2 
+{
+    color: white;
+}
+
+.update-content
+{
+    padding-top: 7%;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+}
+
+.update-content p
+{
+    font-family: 'Raleway-Light';
+    font-size: 1em;
+    line-height: 2em;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding-top:  1.5em;
+}
+
+.update-textbox
+{
+    background-color: white;
+    width: 415px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1em;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 40px;
+}
+
+input[type=text] {
+    border: none;
+    float: left;
+    margin-left: 12px;
+    margin-top: 5px;
+}
+
+input[type=submit]
+{
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    box-sizing: border-box;
+    width: 125px;
+    height: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-family: 'Raleway-Medium';
+    background-color: #e2574c;
+    color: white;
+    border: none;
+    float: right;
+    margin-right: 5px;
+    
+    
+}
+/*FOOTER*/ 
+
+footer
+{
+    height: 200px;
+    background-color: #242424;
+    padding: 3% 3% 0 3%; 
+    color: white;
+    border-top-style: solid;
+    border-top-width: 10px;
+}
+
+footer a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-info
+{
+    float: left;
+    line-height: 1.5em;
+    font-family: 'PlayfairDisplay-Regular';
+}
+
+.footer-address
+{
+    margin-top: 1em;
+    color: #999;
+}
+.footer-nav
+{
+    float: right;
+}
+
+.footer-nav ul
+{
+    list-style-type: none;
+    padding-right: 4em;
+}
+
+.footer-nav ul li{
+    padding-bottom: 5px;
+    font-family: 'Raleway-Light'; 
+    line-height: 1.5em;
+    font-size: 0.85em;
+}
+
+.footer-nav ul li i
+{
+    margin-right: 10px;
+}
+
+
+/*TABLET*/
+@media only screen and (min-width: 600px) and (max-width: 999px) {
+
+}
+
+/**MOBILE**/
+ @media only screen and (max-width: 599px) {
+     
+     .description-section p
+     {
+         width: 90%;
+     }
+     .intro-content h1
+     {
+         font-size: 2.75em;
+     }
+     
+     .update-content
+     {
+         width: 80%;
+     }
+     .update-content p
+     {
+         font-size: .9em;
+     }
+     
+     footer
+     {
+         padding-bottom: 1em;
+     }
+     
+     .footer-info
+     {
+         float: none;         
+         text-align: center;
+         font-size: 0.8em;
+     }
+     
+     .footer-nav
+     {
+         display: block;
+         margin: 0 auto;
+         text-align: center;
+         margin-top: 2em;
+         float: none;
+         
+         
+     }
+     
+     .footer-nav ul
+     {
+         padding-right: 0;
+         
+        
+     }
+     
+     .footer-nav ul li
+     {
+         display: inline;
+         font-size: 1.25em;
+     }
+     
+     .footer-nav span
+     {
+         display: none;
+    
+     }
+}
+
+@media only screen and (max-width: 1200px) {
+    
+    .product-div
+    {
+        width: 45%;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .logo
+    {
+        width: 25%;
+    }
+    
+    nav 
+    {
+        width: 10%;
+    }
+    .product-div
+    {
+        width: 100%;
+    }
+    
+    .update-textbox
+    {
+        width: 275px;
+    }
+    
+    input[type=submit]
+    {
+        width: 100px;
+    }
+}
