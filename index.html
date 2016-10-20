@@ -10,7 +10,7 @@
 <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/main.js"></script>
+<script src="build/js/main.min.js"></script>
 
 </head>
 
@@ -168,65 +168,7 @@
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
-	<script>
-		  function validateForm(){
-           // write the code that describes the steps to validate the form
-           // i need to validate the email address
-           // what is the criteria for valid email address
-           // blah followed by an @ followed by blah follorwed by a do followed by two-four characters(for now)
-           // todo: cosnider this dot that dot some extension
-
-           //research : substr(), substring(), indexOf(), charAt() methods of
-           //string object
-
-           console.log("validateForm(): ");
-           var emailFieldValue = document.getElementById("email").value;
-           console.log("substr(0,4) = " + emailFieldValue.substr(0,4));
-           console.log("substring(2,8) = " + emailFieldValue.substring(2,8));
-           console.log("does email have 'mia' ? " + emailFieldValue.indexOf ("mia"));
-           console.log("does email have 'sdfsd' ?" + emailFieldValue.indexOf ("sdfsd"));
-           console.log("what character is found at position 5?" + emailFieldValue.charAt(5));
-           
-           var score = 0;
-           if(emailFieldValue.indexOf("a")!=-1){
-               score = score + 1;
-               console.log("found an @!");
-           }else{
-               console.log('o dod not find an @ :(")');
-           }
-
-           console.log("the number of characters in my email field calue is");
-           console.log(emailFieldValue.length);
-           var lastCharPosition = emailFieldValue.length-1;
-           if (emailFieldValue.charAt(lastCharPosition-2)=="." || emailFieldValue.charAt(lastCharPosition-3)=="." || emailFieldValue.charAt(lastCharPosition-4)=="."){
-                console.log("you have a dot 2,3, or 4 chars from the end.");
-                score = score + 1;
-           }
-           var badChars = ["!", "#", "&", "*"];
-           
-           var bad=0;
-           for (var i=0; i<badChars.length; i++){
-               var currentBadChar = badChars[i];
-               for (var r=0; r<emailFieldValue.length; r++){
-                   var currentgoodChar= emailFieldValue.charAt(r);
-                   if(currentgoodChar == currentBadChar){
-                       alert("email is invalid, try again");
-                       bad = 1;
-                       break;
-                       
-                   }
-               }
-           }
-
-           if(bad == 0){
-               score=score+1;
-           }
-           if(score == 3){
-               alert('Thanks for subscribing!');
-           }
-
-       }
-	</script>
+	
 
 
 </body>
