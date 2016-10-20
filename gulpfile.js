@@ -33,7 +33,7 @@ gulp.task("conCSS", function(){
     //targeting files 
     gulp.src('./build/css/*.css')
     //condenses code into one line
-    .pipe(conCSS('.all.css'))
+    .pipe(conCSS('all.css'))
     .pipe(rename({extname: ".min.css"}))
     .pipe(gulp.dest('./build/css'));
     
