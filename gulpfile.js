@@ -31,7 +31,6 @@ gulp.task("CSS", function(){
 
 gulp.task("conCSS", function(){
     //targeting files 
-    //gulp.src('./**/*.js') // - looks for all js files in the folder and goes into subfolders if available
     gulp.src('./build/css/*.css')
     //condenses code into one line
     .pipe(conCSS('.all.css'))
