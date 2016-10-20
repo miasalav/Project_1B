@@ -122,7 +122,7 @@ nav ul li a:hover
     max-width: 100%;
 }
 
-#cart-items
+#cart-num
 {
     background-color: red;
     height: 20px;
@@ -176,8 +176,8 @@ nav ul li a:hover
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.247059) 0%,
         rgba(0, 0, 0, 0.247059) 100%),
-        url(../images/banner-girl.png),
-        url(../images/flower-bkgd.jpg);
+        url(../../images/banner-girl.png),
+        url(../../images/flower-bkgd.jpg);
     background-repeat: repeat-x, no-repeat;
     background-size: cover, contain;
     background-position: center top, 50% 100px;
@@ -268,7 +268,7 @@ nav ul li a:hover
 
 #men-div
 {
-   background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url("../images/mens-category.jpg");
+   background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url("../../images/mens-category.jpg");
     background-repeat: no-repeat;
     background-size: cover;
    flex-basis: 100%;
@@ -277,35 +277,35 @@ nav ul li a:hover
 
 #trend-div
 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url("../images/trends-category.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url("../../images/trends-category.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #glasses-div
 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url("../images/glasses-category.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url("../../images/glasses-category.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #sale-div
 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url("../images/sale-category.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url("../../images/sale-category.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #bag-div
 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url("../images/bags-category.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url("../../images/bags-category.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #women-div
 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url("../images/womens-category.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url("../../images/womens-category.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     flex-basis: 100%;
@@ -336,11 +336,12 @@ nav ul li a:hover
 .product-div img{
     display: block;
     margin: 0 auto;
+    height: 200px;
 }
 .product-div
 {
     width: 100%;
-    line-height: 2.25em;
+    line-height: 1.25em;
     text-align: center;
     display: flex;
 }
@@ -358,8 +359,10 @@ nav ul li a:hover
 .product-div h5
 {
      font-family: 'Playfair Display', sans-serif;
-     font-size: 1.2em;
+     font-size: 1em;
      color: #e2574c;
+     padding: 5px;
+    margin-top: 1em;
 }
 
 .product-div p
@@ -380,7 +383,7 @@ nav ul li a:hover
 
 .updates-section
 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url("../images/wave-bkgd.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.2)), url("../../images/wave-bkgd.jpg");
     background-repeat: no-repeat;
     background-size: contain 120% 250%;
     background-position: center bottom;
